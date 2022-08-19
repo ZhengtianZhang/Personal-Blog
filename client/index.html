@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBlog</title>
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>MyBlog</h1>
+    <div class="blog-form-wrapper">
+      <form class="blog-form" autocomplete="off">
+        <div>
+          <label for="title">Title: </label>
+          <input type="text" name="title" id="title" required />
+        </div>
+        <div>
+          <textarea id="content" name="content" rows="5" required> </textarea>
+        </div>
+        <div>
+          <input type="submit" value="Post New Blog" />
+        </div>
+      </form>
+    </div>
+    <div class="blog-list-wrapper">
+      <ul class="blog-list"></ul>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
